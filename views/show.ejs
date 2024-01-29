@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Post</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.container{
+background-color: lightcoral;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+flex-direction: row;
+
+/* display: inline;
+width: 100%; */
+gap: 2%;
+
+
+}
+.container .text-start{
+
+height: 30vh;
+gap: 2%;
+width: 20vw;
+background-color: rgba(127, 255, 221, 0.26);
+margin: 1%;
+padding: 1%;
+}
+
+.navbar{
+display: flex;
+gap: 10%;
+flex-direction: row;
+flex-wrap: wrap;
+height: 8vh;
+background-color: rgba(255, 0, 102, 0.553);
+align-items: center;
+/* text-decoration: none; */
+
+}
+.title
+.new-post a{
+text-decoration: none;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+            <div class="card text-start">
+                <img class="card-img-top" src="" alt="Title" />
+                <div class="card-body">
+                    <h4 class="card-title">Username: <%= post.username %></h4>
+                    <p class="card-text">Post Content: <%= post.content %></p>
+                    <p class="card-text">ID: <%= post.id %></p>
+                </div>
+            </div>
+
+</div>
+</body>
+</html>

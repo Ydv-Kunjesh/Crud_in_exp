@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="title">
+                CRUD IN EXPRESS
+
+            </div>
+            <div class="new-post">
+                <a href="http://localhost:8080/post/new">New 
+                Post</a>
+            </div>
+            
+
+
+
+        </div>
+    </nav>
+        <div class="container">
+            <% for (post of posts) { %>
+                <div class="card text-start">
+                    <img class="card-img-top" src="" alt="Title" />
+                    <div class="card-body">
+                        <h4 class="card-title">Username: <%= post.username %></h4>
+                        <p class="card-text">Post Content: <%= post.content %></p>
+                        <a href="http://localhost:8080/post/<%=post.id%>/edit">Edit Your Post</a>
+                        <form method="post" action="/post<%=post.id%>_method=DELETE">
+                        <button>Delete Post</button>
+                    </form>
+                    </div>
+                </div>
+            <% } %>
+</div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
